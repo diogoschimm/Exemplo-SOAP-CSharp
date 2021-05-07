@@ -1,6 +1,24 @@
 # Exemplo-SOAP-CSharp
 Exemplo de POST SOAP
 
+Main
+
+```c#
+static void Main(string[] args)
+{
+    var requisicao = new RequisicaoSoap();
+    var endereco = requisicao.ConsultarCEP();
+
+    Console.WriteLine(endereco.Cep);
+    Console.WriteLine(endereco.End);
+    Console.WriteLine(endereco.Bairro);
+    Console.WriteLine(endereco.Cidade);
+    Console.WriteLine(endereco.UF);
+    Console.WriteLine(endereco.Complemento);
+
+}
+```
+
 Requisição
 
 ```c#
